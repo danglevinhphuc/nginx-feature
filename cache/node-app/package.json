@@ -1,5 +1,5 @@
 {
-    "name": "node-app-reverse-proxy-nginx",
+    "name": "node-app-cache-nginx",
     "version": "1.0.0",
     "author": "danglevinhphuc",
     "main": "index.js",
