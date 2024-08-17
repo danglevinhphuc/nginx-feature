@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  node-app:
+    build:
+      context: ./cache/node-app
+    ports:
+      - "3000"  # Expose this port if needed for local testing
+
+  nginx:
+    build:
+      context: ./cache/nginx
+    ports:
+      - "80:80"  # Map port 80 on host to port 80 on container
+    depends_on:
+      - node-app
