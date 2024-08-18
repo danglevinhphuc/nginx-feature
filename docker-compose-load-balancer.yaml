@@ -3,19 +3,19 @@ version: '3'
 services:
   node-app1:
     build:
-      context: ./loadbalancer/node-app
+      context: ./load-balancer/node-app
     ports:
       - "3001:3000"
 
   node-app2:
     build:
-      context: ./loadbalancer/node-app
+      context: ./load-balancer/node-app
     ports:
       - "3002:3000"
 
   nginx:
     build:
-      context: ./loadbalancer/nginx
+      context: ./load-balancer/nginx
     ports:
       - "80:80"
     depends_on:
