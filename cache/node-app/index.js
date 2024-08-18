@@ -2,10 +2,10 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const TIME_OUT = 5
+const TIME_OUT = 5 * 1000 // 5s
 
 app.get('/healthcheck', (req, res) => {
-  res.send('Hello from Node.js app reverse proxy');
+  res.send('Hello from Node.js app cache');
 });
 
 app.get('/api/data', (req, res) => {
