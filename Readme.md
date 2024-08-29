@@ -35,3 +35,6 @@ docker-compose -f docker-compose-compression.yaml up --build
 ```bash
 docker-compose -f docker-compose-url-rewriting-demo.yaml up --build
 ```
+
+## Access the Application
+Open your browser and go to http://localhost.
