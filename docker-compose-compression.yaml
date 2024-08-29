@@ -1,0 +1,14 @@
+version: '3'
+services:
+  node_app:
+    build:
+      context: ./compression/backend
+    ports:
+      - "3000"  # Expose this port if needed for local testing
+  nginx:
+    build:
+      context: ./compression/nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - node_app

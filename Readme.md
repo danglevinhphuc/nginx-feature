@@ -27,3 +27,7 @@ docker-compose -f docker-compose-load-balancer.yaml up --build
 ```bash
 docker-compose -f docker-compose-load-balancer.yaml down
 ```
+6. Start feature Compression
+```bash
+docker-compose -f docker-compose-compression.yaml up --build
+```
