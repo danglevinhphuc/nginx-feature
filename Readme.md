@@ -31,3 +31,7 @@ docker-compose -f docker-compose-load-balancer.yaml down
 ```bash
 docker-compose -f docker-compose-compression.yaml up --build
 ```
+6. Start feature URL Rewriting
+```bash
+docker-compose -f docker-compose-url-rewriting-demo.yaml up --build
+```

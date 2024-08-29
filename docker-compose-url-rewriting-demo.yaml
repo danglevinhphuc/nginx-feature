@@ -1,0 +1,13 @@
+version: '3'
+services:
+  backend:
+    build: ./url-rewriting-demo/backend
+    ports:
+      - "3000:3000"
+
+  nginx:
+    build: ./url-rewriting-demo/nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
